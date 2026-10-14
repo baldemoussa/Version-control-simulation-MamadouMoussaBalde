@@ -1,5 +1,7 @@
 # Version Control Simulation
 
+## By [Mamadou Moussa Balde](https://www.linkedin.com/in/2mb/)
+
 A one-page site about Git and the course objectives. `index.html` is the page. `styles.css` sets the layout, the Outfit font, and the blue headings. The browser tab title is **Course Objectives & Git Fundamentals**.
 
 ## Screenshots

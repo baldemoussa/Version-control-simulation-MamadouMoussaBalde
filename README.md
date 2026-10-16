@@ -1,20 +1,10 @@
 # Version Control Simulation
 
-## By [Mamadou Moussa Balde](https://www.linkedin.com/in/2mb/)
+A one-page site about Git and the course objectives.
 
-A one-page site about Git and the course objectives. `index.html` is the page. `styles.css` sets the layout, the Outfit font, and the blue headings. The browser tab title is **Course Objectives & Git Fundamentals**.
+## Description
 
-## Screenshots
-
-**Top of the page.** The nav, the heading, the welcome card, and the start of the summary. The classroom photo loads from pngtree.
-
-![Welcome card with the classroom photo and the summary heading](docs/screenshots/home.png)
-
-**Objectives and footer.** Six objectives sit in two columns. The footer links and the copyright line are under that card. The last words of the summary are still visible at the top because this shot is the bottom of the page.
-
-![Course objectives grid and the social footer](docs/screenshots/objectives.png)
-
-## The page
+`index.html` is the page. `styles.css` sets the layout, the Outfit font, and the blue headings. The browser tab title is **Course Objectives & Git Fundamentals**.
 
 The nav stays on this page:
 
@@ -37,18 +27,6 @@ The footer opens Facebook, X, Instagram, and LinkedIn in a new tab. The line und
 
 The page background is `#f8fafc`. Headings in the cards are `#0284c7`. Body text is `#0f172a`. On a nav link, the stylesheet turns the text blue and draws an underline. Cards lift slightly on hover, and an objective card shifts to the right. Below 768px the welcome photo stacks above its paragraph.
 
-## How to open it
-
-Open `index.html` in a browser, or serve this folder:
-
-```bash
-python -m http.server
-```
-
-The photo needs a network connection.
-
-## Git history
-
 Remote: `https://github.com/baldemoussa/version-control-simulation-MamadouMoussaBalde.git`
 
 `main` tracks `origin/main`. `feature/header` and `feature/footer` still point at the commits from before the merge.
@@ -60,7 +38,64 @@ Remote: `https://github.com/baldemoussa/version-control-simulation-MamadouMoussa
 5. A later commit added `styles.css`, the classroom photo, the in-page nav, and the heading "Welcome to Our Home Page".
 6. Pull request **#1** is merged on `origin/review/main`. The merge message says the index update and the look and feel were approved.
 
-# Reflection
+## Screenshots
+
+### Top of the page
+
+The nav, the heading, the welcome card, and the start of the summary. The classroom photo loads from pngtree.
+
+![Welcome card with the classroom photo and the summary heading](docs/screenshots/home.png)
+
+### Objectives and footer
+
+Six objectives sit in two columns. The footer links and the copyright line are under that card. The last words of the summary are still visible at the top because this shot is the bottom of the page.
+
+![Course objectives grid and the social footer](docs/screenshots/objectives.png)
+
+## Getting Started
+
+### Dependencies
+
+* A browser
+* A network connection for the classroom photo
+
+### Installing
+
+No install step. `index.html` and `styles.css` are the page.
+
+### Executing program
+
+Open `index.html` in a browser, or serve this folder:
+
+```bash
+python -m http.server
+```
+
+## Help
+
+The photo needs a network connection. Summary, Objectives, and Contact are in-page links. Summary was clicked and the address became `index.html#hero`.
+
+## Authors
+
+[Mamadou Moussa Balde](https://www.linkedin.com/in/2mb/)
+
+## Version History
+
+* `main` tracks `origin/main` at `https://github.com/baldemoussa/version-control-simulation-MamadouMoussaBalde.git`
+* `feature/header` and `feature/footer` still point at the commits from before the merge
+* Commit `fix merge conflict` kept the Course Objectives heading and all six list items
+* Pull request **#1** is merged on `origin/review/main`
+
+## License
+
+This folder does not include a `LICENSE.md` file.
+
+## Acknowledgments
+
+* [Outfit](https://fonts.google.com/specimen/Outfit)
+* [README template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
+
+## Reflection
 
 1. **Branching Strategy:** Dedicated branches (`feature/header` and `feature/footer`) were created using `git branch`/`git checkout` to isolate changes and prevent team members from overwriting each other's work.
 2. **Conflict Resolution:** A merge conflict in `index.html` was manually resolved by locating the Git conflict markers and combining the structural code changes from both branches.
